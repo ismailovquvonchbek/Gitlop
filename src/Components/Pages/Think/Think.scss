@@ -1,0 +1,109 @@
+.think {
+    margin-top: 200px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.think__heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;    
+    color: #12100C;
+}
+
+.think__text {
+    max-width: 6    48px;
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;    
+    margin-top: 8px;
+    color: #12100CB2;
+}
+
+.think__buttonGroup {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 140px;
+}
+
+.think__btn:nth-child(1) {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;    
+    color: #12100C;
+    padding: 8px 18px;
+    background: #FFAE33;
+    border-radius: 10.5px;
+    border: none;
+}
+
+.think__btn:nth-child(2) {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;    
+    color: #12100C;
+    padding: 8px 24px;
+    background: #FFB0AE;
+    border-radius: 10.5px;
+    border: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .think {
+        margin-top: 100px;
+
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 17px;
+            width: 500px;
+            margin-top: 14px;
+        }
+
+        .think__buttonGroup {
+            margin-top: 90px;
+        }
+
+        img {
+            width: 500px;
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .think .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .think__info {
+        order: 10;
+        margin-top: 20px;
+    }
+
+    .think__img {
+        order: -10;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .think {
+        margin-left: 200px;
+
+        img {
+            max-width: 400px;
+        }
+    }
+
+
+}
